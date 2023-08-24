@@ -7,3 +7,4 @@ Recursos utilizados:
 - Spring Devtools
 - Lombok
 ```
+Até 22/08, foi aprendido a configurar e iniciar uma aplicação com Spring Initializr e a criar uma classe controller, para receber requisições via Postman e obter as informações do request body.

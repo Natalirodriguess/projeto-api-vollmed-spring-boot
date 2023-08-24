@@ -19,7 +19,7 @@ public class MedicoController {
     MedicoRepository repository;
     @PostMapping
     @Transactional // anotação para ter uma transação ativa para o banco de dados já que é um método de escrita
-    public void cadastrar(@RequestBody  DadosCadastroMedicos dados){
+    public void cadastrar(@RequestBody @Valid DadosCadastroMedicos dados){
         repository.save(new Medico(dados));
     }
 }

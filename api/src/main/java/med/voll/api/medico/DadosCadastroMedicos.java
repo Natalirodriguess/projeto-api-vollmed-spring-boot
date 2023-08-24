@@ -1,6 +1,6 @@
 package med.voll.api.medico;
 
-import med.voll.api.endereco.Endereco;
+import med.voll.api.endereco.DadosEndereco;
 
-public record DadosCadastroMedicos(String nome, String email, String crm, Especialidade especialidade, Endereco endereco) {
+public record DadosCadastroMedicos(String nome, String email, String crm, Especialidade especialidade, DadosEndereco endereco) {
 }

@@ -1,5 +1,5 @@
 package med.voll.api.medico;
-
+//entidade que representa o objeto Medico na tabela medicos
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -28,4 +28,10 @@ public class Medico {
     @Embedded
     private Endereco endereco;
 
+    public Medico(DadosCadastroMedicos dados) {
+        this.nome = dados.nome();
+        this.crm = dados.crm();
+        this.especialidade = dados.especialidade();
+        this.endereco = new Endereco(dados.endereco());
+    }
 }
